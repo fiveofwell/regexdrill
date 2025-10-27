@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale=1" />
+    <title>正規表現練習ドリル</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>正規表現練習ドリル</h1>
+        <p>正規表現を練習しましょう。</p>
+        <div id="statement">
+        </div>
+        <div class="modeSelector">
+            <label>モード</label>
+            <label><input type="radio" name="mode" value="partial" checked> 部分一致（含まれる行を抽出）</label>
+            <label><input type="radio" name="mode" value="full"> 完全一致（^…$ で検索）</label>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <label>レベル選択</label>
+            <label><input type="radio" name="level" value="0" checked> 選択無し</label>
+            <label><input type="radio" name="level" value="1"> レベル1</label>
+            <label><input type="radio" name="level" value="2"> レベル2</label>
+            <label><input type="radio" name="level" value="3"> レベル3</label>
+            <label><input type="radio" name="level" value="4"> レベル4</label>
+            <label><input type="radio" name="level" value="5"> レベル5</label>
+            <label><input type="radio" name="level" value="6"> レベル6</label>
+            <label><input type="radio" name="level" value="7"> レベル7</label>
+            <label><input type="radio" name="level" value="8"> レベル8</label>
+            <label><input type="radio" name="level" value="9"> レベル9</label>
+            <label><input type="radio" name="level" value="10"> レベル10</label>
+            <label><input type="radio" name="level" value="11"> レベル11</label>
+            <label><input type="radio" name="level" value="12"> レベル12</label>
+            <label><input type="radio" name="level" value="13"> レベル13</label>
+        </div>
+
+        <div class="app">
+            <label>正規表現を入力: </label>
+            <input id="regex" type="text" name="regexp">
+            <input type="submit" class="guessSubmit" value="実行">
+            <br>
+            <div class="field">
+                <div class="field-box">
+                    <label for="input">入力: </label>
+                    <textarea id="input" name="input" rows="10" cols="25" spellcheck="false"></textarea>
+                </div>
+                <div class="field-box">
+                    <label for="output">出力: </label>
+                    <textarea disabled id="output" name="output" rows="10" cols="25"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

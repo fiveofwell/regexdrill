@@ -1,0 +1,68 @@
+@media screen and (min-width: 600px) {
+    .sidebar {
+        width: 100px;
+    }
+
+    .app {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 599.9px) {
+    label {
+        display: block;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .field {
+        flex-direction: column;
+    }
+
+    .app {
+        padding-top: 10px;
+    }
+}
+
+#statement {
+    padding: 10px;
+    border: 2px dotted black;
+    width: 100%;
+    padding: 10px;
+    max-width: 565px;
+    min-height: 100px;
+    box-sizing: border-box;
+}
+
+.field {
+    display: flex;
+    gap: 16px;
+}
+
+body {
+    padding: 10px;
+}
+
+label {
+    display: flex;
+}
+
+.field-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    height: auto;
+    display: flex;
+}
+
+textarea:disabled {
+    color: black;
+}
+
+.modeSelector {
+    margin: 10px 0;
+}

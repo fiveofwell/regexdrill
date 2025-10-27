@@ -1,0 +1,52 @@
+{
+  "regexAnswer": [
+    "",
+    "^c.t$",
+    "^The",
+    "end$",
+    "^go*d$",
+    "^ha+!$",
+    "favou?rite",
+    "^[aeiouAEIOU]",
+    "[^A-Z]$",
+    "^(wow)+$",
+    "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+    "^[a-z]{2,5}$",
+    "^(Really){0,2}Fantastic!$",
+    "dog|cat"
+  ],
+
+  "inputText": [
+    "",
+    "cat\ncot\ncut\ncoat\ncute\ncart\ncity\nchat\ncode\nc.t\ncutie\ncaught",
+    "The world is vast.\nthis is lowercase.\nThere is hope.\nThat’s amazing!\nThey said hello.\nOther lines follow.\nThe sky is blue.",
+    "This is the end\nWe reached the end\nStart here\nMiddle ground\nfinal end\nThe story ends\nGame over\nSentence with end\nfinish it now\nThis is the end\nend",
+    "good\ngod\ngd\ngold\ngoood\ngoose\ngoodbye\ngooddog\nGOD\nbad\nmood\ngooodd ",
+    "ha!\nha!!\nhaa!\nhaaa!\nh!\nhha!\nHa!\nha!ha!\nha!\nhaaa!",
+    "My favorite color is blue.\nI have a favourite movie.\nThis is my favor.\nMy favourite things are listed below.\nHer favourite subject is math.\nfavorite\nfavourite",
+    "apple\nBanana\norange juice\ngrape\numbrella\nElephant\nice cream\nyakitori\noctopus\nstrawberry\napricot\n123start\neel\nOven\numbrella garden",
+    "HELLO\nhello\nGoodBYE\nEND\nstart\nJapan\nTOKYO\nData\ninfo\nDOG\napple\nTEST\nfinal\nWORLD",
+    "wowwowwow\nwowo\nwooow\nwowwow\nwo\nwow\nwooooow\nwowwowwowwow\nowoowo\nwhowwhaw",
+    "2025-10-20\n1999-01-01\n20-10-2024\n2024-02-29\n2020-12-31\n2025/10/20\n20250101\n2025-13-01",
+    "a\nab\nabc\nabcd\nabcde\nabcdef\nabcdefg\nA\nAB\nAbc\nabc123\nabc_def\nabz\nz\nzzzzzzz\nxyz\nxYz",
+    "ReallyyFantastic!\nAmazing\nReallFantastic!\nbrilliant\nFantastic!\nReally\nReallyFantastic!\nReallyReallyCool\nReallyReallyFantastic!\nAwsome\nExcellent\nReallyReallyReallyFantastic!\nReallyIncredible!",
+    "dog\ncat\nbird\ndogcat\ncatalog\ndoghouse\nfish\nturtle\ncaterpillar\nwolf\ncatdog\nkitten"
+  ],
+
+  "statementText": [
+    "自由入力モードです。 下の入力欄に好きなテキストを入力し、正規表現を入力して「実行」を押すと、 一致した行が出力欄に表示されます。",
+    "レベル1: '.' は任意の1文字にマッチします。'c'と't'の間に任意の1文字がある行を取り出してください。(完全一致モード)",
+    "レベル2: '^' は行の先頭を意味します。'The'で始まる行を取り出してください。(部分一致モード)",
+    "レベル3: '$' は行の末尾を意味します。'end'で終わる行を取り出してください。(部分一致モード)",
+    "レベル4: '*' は直前の文字が0回以上繰り返されることを意味します。'g'の後に'o'が0回以上続き、その後に'd'がある行を取り出してください。(完全一致モード)",
+    "レベル5: '+' は直前の文字が1回以上繰り返されることを意味します。'h'の後に'a'が1回以上続いた後、'!'がある行を取り出してください。(完全一致モード)",
+    "レベル6: '?' は直前の文字が0個もしくは1個あることを意味します。アメリカ英語の'favorite'もしくはイギリス英語の'favourite'が含まれている行を取り出してください。(部分一致モード)",
+    "レベル7: '[ ]'で文字クラスを作り、かっこの中のいずれかの文字にマッチさせる事ができます。母音(a,e,i,o,u,A,E,I,O,U)で始まる行を取り出してください。(部分一致モード)",
+    "レベル8: '[^ ]' は、かっこの中の文字以外を意味します。行の末尾の文字が英大文字以外の行を取り出してください。(部分一致モード)",
+    "レベル9: '()' はグループ化を意味します。'wow'が1回以上連続して繰り返されている行を取り出してください。(完全一致モード)",
+    "レベル10: '{n}' は直前の文字のn回の繰り返しを指定します。西暦形式の日付（YYYY-MM-DD）にマッチする行を取り出してください。(完全一致モード)",
+    "レベル11: '{m,n}' は直前の文字のm回以上、n回以下の繰り返しを指定します。英小文字が2~5個の行を取り出してください。(完全一致モード)",
+    "レベル12: 'Really' が0～2回続いた後に'Fantastic!'が続く行を取り出してください。(完全一致モード)",
+    "レベル13: '|' は「または」を意味します。'dog' または 'cat' を含む行を取り出してください。(部分一致モード)"
+  ]
+}
