@@ -59,10 +59,10 @@ radioButton.forEach(radio => {
 
         const selectedLevel = getSelectedLevel();
         if (selectedLevel !== 0) {
-            inputField.setAttribute("disabled", true);
+            inputField.setAttribute("readonly", true);
             inputField.style.opacity = 1;
         } else {
-            inputField.removeAttribute("disabled");
+            inputField.removeAttribute("readonly");
         }
 
         inputField.value = inputText[selectedLevel];

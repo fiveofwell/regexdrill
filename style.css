@@ -59,8 +59,9 @@ label {
     display: flex;
 }
 
-textarea:disabled {
+textarea[readonly] {
     color: black;
+    cursor: default;
 }
 
 .modeSelector {
